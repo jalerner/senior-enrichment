@@ -3,6 +3,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const {resolve} = require('path')
+// const models = require('../db/models');
 
 const pkg = require('../package.json')
 
@@ -11,7 +12,7 @@ const app = express()
 if (process.env.NODE_ENV !== 'production') {
   // Logging middleware (non-production only)
   app.use(require('volleyball'))
-}  
+}
 
 //The code below works because `.use` returns `this` which is `app`. So what we want to return in the `module.exports` is `app`, and we can chain on that declaration because each method invokation returns `app` after mutating based on the middleware functions
 module.exports = app

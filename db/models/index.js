@@ -6,5 +6,16 @@
 	// This is an acceptable pattern but it does have limitations in that if you change the name of the model you will have to change every time it is requeired everywhere
 
 const User = require('./user')
+const Student = require('./student')
+const Campus = require('./campus')
 
-module.exports = {User}
+// Form associations
+// Gives each student a campus Id
+Student.belongsTo(Campus);
+Campus.hasMany(Student);
+
+module.exports = {
+	User,
+	Student,
+	Campus
+}

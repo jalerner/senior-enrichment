@@ -1,0 +1,29 @@
+
+.phlBackground {
+  background-image: url(images/phlBackground.jpg);
+  height: 100vh;
+}
+
+.noBackground {
+  background: lightblue
+}
+
+.nearBottom {
+  padding-bottom: 2%;
+}
+
+.bottom {
+  padding-bottom: 5%;
+}
+
+.increaseMargin {
+  padding-left: 5%vw;
+}
+
+.smallImage {
+  height: 20%vh;
+  width: 20%vh;
+}
+
+
+
